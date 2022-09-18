@@ -1,4 +1,13 @@
-#bgvideo {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+  #bgvideo {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
@@ -8,43 +17,26 @@
     top: 0px;
     bottom: 0;
     z-index: -1;
-    margin: 0;
-  }
-  .bottom {
-    position: fixed;
-    width: 390px;
-    bottom: 0px;
-    margin: 0;
-    background-color: black;
-    
-  }
-
-  body {
-    height: 100vh;
-    min-height: -webkit-fill-available;
   }
   
-  html {
-    height: -webkit-fill-available;
+  .bottom {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: 0;
   }
 
   #card {
     animation: cssAnimation 0s 3s forwards;
-    margin: 0%;
-    position: relative;
-
-
+    margin-bottom: 10%;
   }
+
   .front {
     border-radius: 30px;
+  }
 
-  }
-  .back {
-    border-radius: 30px;
-    text-align: center;
-  }
   .bild {
-        width: 100%;
-    border-radius: 5px;
-margin-top: 8rem;
+    width: 100%;
   }
+
